@@ -1,0 +1,26 @@
+div {
+    padding-top: 37px;
+    padding-left: 180px;
+    height: 61px;
+    width: 67px;
+}
+
+body {
+    background-image: url("blue_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+a {
+    color: black;
+    font-family: sans-serif;
+    position: sticky;
+}
+
+h2 {
+    color: #FFE039;
+    font-family: sans-serif;
+    padding-left: 500px;
+    text-size-adjust: 50px;
+}
