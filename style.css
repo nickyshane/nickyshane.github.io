@@ -1,26 +1,559 @@
-div {
-    padding-top: 37px;
-    padding-left: 180px;
-    height: 61px;
-    width: 67px;
+html, body {
+    height: 100%;
+    margin: 0%;
 }
 
 body {
-    background-image: url("blue_bg.jpg");
+    background-image: url("https://res.cloudinary.com/dnv3ztgxi/image/upload/v1724477733/images/ldrv4ossexd6kovmtzg6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;} /*blue means motivation, yellow means happiness*/
+
+header {
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10px;
+    font-family: Arial;
 }
 
-a {
+.nickname img{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0;
+    padding-left: 400px;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     color: black;
-    font-family: sans-serif;
-    position: sticky;
+    background-color: #FFE140;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
 }
 
-h2 {
+nav ul li a:hover {
+    background-color: #ffd700;
+}
+
+.intro {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 300px;
+    white-space: nowrap;
+    gap: 40px;
+    margin: 0;
+}
+
+.me img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    font-family: 'Noto Serif', serif;
+}
+
+.text h2 {
     color: #FFE039;
-    font-family: sans-serif;
-    padding-left: 500px;
-    text-size-adjust: 50px;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.text p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+
+/*ABOUT PAGE*/
+
+.about_title {
+    color: #FFE039;
+    font-size: 4rem;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.about_content {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 300px;
+    margin: 0;
+}
+
+.about_content .me img {
+    display: block;
+    margin: 0 auto;
+    max-width: 271px;
+    height: auto;
+}
+
+.about_content .text {
+    font-family: 'Noto Serif', serif;
+}
+
+.about_content .text p {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0;
+    padding-left: 100px;
+    white-space: nowrap;
+}
+
+
+/*CONTACT PAGE*/
+
+.contact_title {
+    color: #FFE039;
+    font-size: 4rem;
+    text-align: center;
+    /*margin: 30px 0;*/
+}
+
+.contact_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 10px;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.contact_item img {
+    height: 80px;
+    width: 90px;
+}
+
+.contact_item p {
+    font-family: 'Noto Serif', serif;
+    color: white;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+/* Laptop styles */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    header {
+        padding: 20px;
+        /*padding-right: 30px;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nickname {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nickname img {
+        height: 80px;
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        /*list-style-type: none;*/
+        /*padding-left: 10px;*/
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 12px 25px;
+        text-align: center;
+        border-radius: 25px;
+    }
+
+    .intro {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /*padding-left: 700px;*/
+        margin: 0%;
+        white-space: nowrap;
+    }
+
+    .me img {
+        display: block;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .text h2 {
+        font-size: 2.5rem;
+        padding-left: 0;
+        text-align: center;
+        white-space: nowrap;
+        margin: 0 auto;
+    }
+
+    .text p {
+        font-size: 1.125rem;
+        text-align: center;
+        padding-left: 0;
+        margin: 0 auto;
+        max-width: 80%;
+        white-space: nowrap;
+    }
+
+    .about_title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 20px 0;
+        /*padding-left: 100px;*/
+    }
+
+    .about_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .about_content .me img {
+        max-width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .about_content .text {
+        max-width: 600px;
+        text-align: left;
+    }
+
+    .about_content .text p {
+        font-size: 1rem;
+        margin: 0 auto;
+        white-space: nowrap;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .contact_title {
+        font-size: 2.5rem;
+        text-align: center;
+        /*margin: 40px 0;*/
+    }
+
+    .contact_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .contact_item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact_item img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .contact_item p {
+        font-size: 1.125rem;
+    }
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        padding-left: 100px;
+    }
+
+    .nickname img {
+        display: flex;
+        height: 70px;
+        width: 70px;
+    }
+
+    nav ul {
+        gap: 10px;
+        /*padding-left: 170px;*/
+
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    .intro {
+        padding-left: 500px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .me img {
+        width: 150px;
+        height: auto;
+    }
+
+    .text h2 {
+        font-size: 35px;
+        padding-left: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .text p {
+        font-size: 15px;
+        padding-left: 10px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about_title {
+        font-size: 50px;
+        text-align: center;
+        margin: 20px 0;
+        padding-left: 300px;
+    }
+
+    .about_content {
+        padding: 15px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        padding-left: 300px;
+    }
+
+    .about_content .me img {
+        width: 150px;
+        margin: 10px 0;
+    }
+
+    .about_content .text p {
+        font-size: 15px;
+        padding-left: 10px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;
+        white-space: nowrap;
+    }
+
+    .contact_title {
+        font-size: 50px;
+        text-align: center;
+        padding-left: 300px;
+        /*margin: 20px 0;*/
+    }
+
+    .contact_content {
+        padding: 20px;
+        justify-content: center;
+        padding-left: 300px;
+    }
+
+    .contact_item {
+        gap: 10px;
+    }
+
+    .contact_item img {
+        height: 60px;
+        width: 70px;
+    }
+
+    .contact_item p {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 599px) {
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nickname img {
+        display: flex;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 0.625rem; /*10px*/
+        padding: 0.437rem 1.0625rem; /*7px 17px*/
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .me img {
+        height: auto;
+        width: 100%;
+        max-width: 200px;
+        border: none;
+        margin: 0 auto;
+    }
+
+    .text h2 {
+        font-size: 1.875rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .text p {
+        font-size: 0.9375rem;
+        text-align: center;
+        padding-left: 100px;
+        line-height: 1.2;
+        word-spacing: 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    .about_title {
+        font-size: 1.875rem;
+        margin: 10px 0;
+        padding-left: 25px;
+    }
+
+    .about_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        padding-left: 15px;
+    }
+
+    .about_content .me img {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .about_content .text p {
+        font-size: 0.875rem;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .contact_title {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 40px;
+    }
+
+    .contact_content {
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_item {
+        gap: 5px;
+        align-items: center;
+        /*padding-left: 70px;*/
+    }
+
+    .contact_item img {
+        height: 50px;
+        width: 60px;
+    }
+
+    .contact_item p {
+        font-size: 14px;
+    }
 }
